@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hala Madrid! | Coming Soon</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #10264a;
+            text-align: center;
+        }
+
+        .top-bar {
+            height: 9px;
+            background: #d4af37;
+        }
+
+        .hero {
+            min-height: 85vh;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .message {
+            max-width: 620px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 5vw, 54px);
+            margin-bottom: 20px;
+        }
+
+        .coming-soon {
+            font-size: 20px;
+            color: #555f70;
+            line-height: 1.7;
+        }
+
+        .hala {
+            color: #c49b24;
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-top: 28px;
+        }
+
+        footer {
+            padding: 22px;
+            background: #10264a;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                gap: 20px;
+                padding: 35px 15px;
+            }
+
+            .badge {
+                width: 75px;
+                height: 75px;
+            }
+
+            .coming-soon {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar"></div>
+
+    <main>
+        <section class="hero">
+            <img
+                class="badge"
+                src="badge.png.webp"
+                alt="Real Madrid badge"
+            >
+
+            <div class="message">
+                <h1>Our Website Is Coming Soon</h1>
+
+                <p class="coming-soon">
+                    Please wait, our website is being developed.
+                    Something special is on its way!
+                </p>
+
+                <div class="hala">HALA MADRID!</div>
+            </div>
+
+            <img
+                class="badge"
+                src="badge.png.webp"
+                alt="Real Madrid badge"
+            >
+        </section>
+    </main>
+
+    <footer>Made for Madridistas | Hala Madrid!</footer>
+</body>
+</html>
